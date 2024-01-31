@@ -1,0 +1,146 @@
+{
+    "device_type": "LD-2410",
+    "title": "LD-2410",
+    "group": "g-custom",
+    "device": {
+        "name": "LD-2410",
+        "id": "LD-2410",
+        "groups": [
+            {
+                "title": "Inputs",
+                "id": "inputs",
+                "order": 0
+            },
+            {
+                "title": "Settings",
+                "id": "settings",
+                "order": 1
+            }
+        ],
+        "channels": [
+            {
+                "name": "presence",
+                "reg_type": "input",
+                "address": 0,
+                "type": "value",
+                "group": "inputs"
+            },
+            {
+                "name": "stationary",
+                "reg_type": "input",
+                "address": 1,
+                "type": "value",
+                "group": "inputs"
+            },
+            {
+                "name": "moving",
+                "reg_type": "input",
+                "address": 2,
+                "type": "value",
+                "group": "inputs"
+            },
+            {
+                "name": "stationary_target_distance",
+                "reg_type": "input",
+                "address": 3,
+                "type": "value",
+                "group": "inputs"
+            },
+            {
+                "name": "stationary_target_energy",
+                "reg_type": "input",
+                "address": 4,
+                "type": "value",
+                "group": "inputs"
+            },
+            {
+                "name": "moving_target_distance",
+                "reg_type": "input",
+                "address": 5,
+                "type": "value",
+                "group": "inputs"
+            },
+            {
+                "name": "moving_target_energy",
+                "reg_type": "input",
+                "address": 6,
+                "type": "value",
+                "group": "inputs"
+            }
+        ],
+        "parameters": [
+            {
+                "id": "address",
+                "title": "Address",
+                "reg_type": "holding",
+                "address": 100,
+                "default": 1,
+                "min": 1,
+                "max": 247,
+                "group": "settings"
+            },
+            {
+                "id": "stopbits",
+                "title": "Stop Bits",
+                "reg_type": "holding",
+                "address": 101,
+                "default": 2,
+                "enum": [1, 2],
+                "enum_titles": ["1", "2"],
+                "group": "settings"
+            },
+            {
+                "id": "baudrate",
+                "title": "Baudrate",
+                "reg_type": "holding",
+                "address": 102,
+                "default": 96,
+                "enum": [12, 24, 48, 96, 192, 384, 576, 1152],
+                "enum_titles": ["1200", "2400", "4800", "9600", "19200", "38400", "57600", "115200"],
+                "group": "settings"
+            },
+            {
+                "id": "max_moving_gate",
+                "title": "Max Moving Gate",
+                "reg_type": "holding",
+                "address": 103,
+                "default": 4,
+                "min": 1,
+                "max": 247,
+                "group": "settings"
+            },
+            {
+                "id": "max_stationary_gate",
+                "title": "Max Stationary Gate",
+                "reg_type": "holding",
+                "address": 104,
+                "default": 4,
+                "min": 1,
+                "max": 247,
+                "group": "settings"
+            },
+            {
+                "id": "idletime",
+                "title": "Idle Time",
+                "reg_type": "holding",
+                "address": 105,
+                "default": 4,
+                "min": 1,
+                "max": 247,
+                "group": "settings"
+            },
+        ],
+        "translations": {
+            "ru": {
+                "presence": "Присутствие",
+                "stationary": "Недвижимый объект",
+                "moving": "Подвижный объект",
+                "stationary_target_distance": "Расстояние до недвижимого объекта",
+                "stationary_target_energy": "Энергия недвижимого объекта",
+                "moving_target_distance": "Расстояние до двигающегося объекта",
+                "moving_target_energy": "Энергия двигающегося объекта",
+                "Address": "Адрес устройства",
+                "Stop Bits": "Стоп биты",
+                "Baudrate": "Скорость обмена"
+            }
+        }
