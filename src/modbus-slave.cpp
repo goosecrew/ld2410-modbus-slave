@@ -182,13 +182,13 @@ void modbus_setup() {
   mb.addHreg(REG_SENSOR_IDLE_TIME);  // настройка Idle time
 
   // input регистры (для чтения показаний датчика)
-  mb.addIreg(REG_SENSOR_PRESENCE);  // датчик присутствия
-  mb.addIreg(REG_SENSOR_STATIONARY);  // датчик присутствия
-  mb.addIreg(REG_SENSOR_STATIONARY_TARGET_DISTANCE);  // датчик присутствия
-  mb.addIreg(REG_SENSOR_STATIONARY_TARGET_ENERGY);  // датчик присутствия
-  mb.addIreg(REG_SENSOR_MOVING);  // датчик присутствия
-  mb.addIreg(REG_SENSOR_MOVING_TARGET_DISTANCE);  // датчик присутствия
-  mb.addIreg(REG_SENSOR_MOVING_TARGET_ENERGY);  // датчик присутствия
+  mb.addIreg(REG_SENSOR_PRESENCE); 
+  mb.addIreg(REG_SENSOR_STATIONARY);  
+  mb.addIreg(REG_SENSOR_STATIONARY_TARGET_DISTANCE); 
+  mb.addIreg(REG_SENSOR_STATIONARY_TARGET_ENERGY);  
+  mb.addIreg(REG_SENSOR_MOVING); 
+  mb.addIreg(REG_SENSOR_MOVING_TARGET_DISTANCE); 
+  mb.addIreg(REG_SENSOR_MOVING_TARGET_ENERGY); 
 
   // записываем в регистры значения адреса, стоповых битов и скорости
   mb.Hreg(REG_MB_ADDRESS, mbAddress);
